@@ -36,6 +36,9 @@ Current and planned data includes:
   - Working population by parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0011690&contexto=bd&selTab=tab2)
   - Median rent per m2 per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012598&contexto=bd&selTab=tab2)
   - % of foreign population per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0011647&contexto=bd&selTab=tab2)
+  - Number of marital family units per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012858&contexto=bd&selTab=tab2)
+  - Number of single-parent household per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012405&contexto=bd&selTab=tab2)
+  - Number of private households per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012459&contexto=bd&selTab=tab2)   
 
 - **OpenStreetMap / Google Places API** *(planned)*  
   - To map existing food shops, cafés, and takeaway spots
