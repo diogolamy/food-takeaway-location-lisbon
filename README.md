@@ -41,7 +41,10 @@ Current and planned data includes:
   - Number of private households per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012459&contexto=bd&selTab=tab2)   
 
 - **OpenStreetMap / Google Places API** *(planned)*  
-  - To map existing food shops, cafés, and takeaway spots
+  - To map existing food shops, cafés, and takeaway spots (**WIP**)
+  - Lisbon parking lots (https://dadosabertos.cm-lisboa.pt/dataset/ocupacao-de-parques-de-estacionamento-historico)
+  - Lisbon public parking details (https://dadosabertos.cm-lisboa.pt/dataset/dados-cm-lisboa-pt-dataset-areas-reguladas-de-estacionamento)
+  - Set of relevant works about Lisbon mobility (https://dadosabertos.cm-lisboa.pt/group/transportes?page=2)
 
 ---
 
@@ -84,7 +87,7 @@ The output of this project will be:
 
 - [x] Define project scope
 - [x] Gather income + inequality data (INE)
-- [ ] Add population + business density
+- [x] Add population + business density
 - [ ] Build location scoring model
 - [ ] Create interactive map dashboard
 - [ ] Prepare final decision report
