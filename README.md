@@ -27,12 +27,15 @@ Current and planned data includes:
 
 - **INE – Instituto Nacional de Estatística**  
   - [Estatísticas do Rendimento ao Nível Local – 2022](https://www.ine.pt)
-  - Median income per person per freguesia
-  - Gini coefficient per freguesia
+  - Median income per person per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012757&contexto=bd&selTab=tab2)
+  - Gini coefficient per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012761&contexto=bd&selTab=tab2)
+  - Economic activity per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0014449&contexto=bd&selTab=tab2)
 
 - **PORDATA**  
-  - Population density
-  - Working population by parish
+  - Population density (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0011613&contexto=bd&selTab=tab2)
+  - Working population by parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0011690&contexto=bd&selTab=tab2)
+  - Median rent per m2 per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0012598&contexto=bd&selTab=tab2)
+  - % of foreign population per city parish (https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0011647&contexto=bd&selTab=tab2)
 
 - **OpenStreetMap / Google Places API** *(planned)*  
   - To map existing food shops, cafés, and takeaway spots
