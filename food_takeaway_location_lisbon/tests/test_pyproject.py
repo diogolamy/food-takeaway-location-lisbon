@@ -1,6 +1,7 @@
-'''
+"""
 Test the pyproject.toml file
-'''
+"""
+
 
 def test_import_main_package():
     try:
