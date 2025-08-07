@@ -43,7 +43,7 @@ jobs:
 
       - name: Run pylint (fail if score < 8.0)
         run: |
-          poetry run pylint food_takeaway_location_lisbon | tee pylint-report.txt
+          poetry run pylint food_takeaway_location_lisbon | tee pylint-report.txt || true
           score=$(tail -n 2 pylint-report.txt | grep -oP 'rated at \K[0-9.]+')
           echo "Pylint score: $score"
           if (( $(echo "$score < 8.0" | bc -l) )); then
