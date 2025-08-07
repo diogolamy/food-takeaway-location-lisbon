@@ -27,11 +27,29 @@ jobs:
       - name: Configure Poetry
         run: poetry config virtualenvs.create false
 
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
+
       - name: Install dependencies
         run: poetry install
 
-      - name: Run pylint
-        run: poetry run pylint food_takeaway_location_lisbon
+      - name: Check code formatting with black
+        run: poetry run black --check .
 
-      - name: Run pytest
-        run: poetry run pytest
+      - name: Run pylint (fail if score < 8.0)
+        run: |
+          poetry run pylint food_takeaway_location_lisbon | tee pylint-report.txt
+          score=$(tail -n 2 pylint-report.txt | grep -oP 'rated at \K[0-9.]+')
+          echo "Pylint score: $score"
+          if (( $(echo "$score < 8.0" | bc -l) )); then
+            echo "Pylint score too low. Must be at least 8.0"
+            exit 1
+          fi
+
+      - name: Run tests with coverage
+        run: poetry run pytest --cov=food_takeaway_location_lisbon --cov-report=term-missing
