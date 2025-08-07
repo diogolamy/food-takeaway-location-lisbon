@@ -30,11 +30,8 @@ jobs:
       - name: Install dependencies
         run: poetry install
 
-      - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=src" >> $GITHUB_ENV
-
       - name: Run pylint
-        run: poetry run pylint src tests
+        run: poetry run pylint food_takeaway_location_lisbon tests
 
       - name: Run pytest
         run: poetry run pytest
