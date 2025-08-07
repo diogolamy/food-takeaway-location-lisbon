@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Poetry
+poetry.lock
+# Keep poetry.lock if you're collaborating and want deterministic installs
+# Remove above line if you want to track it (recommended for teams)
+
+# Virtualenvs
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Jupyter Notebooks (checkpoint files)
+.ipynb_checkpoints/
+
+# Data & Outputs
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+*.zip
+*.pdf
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.kml
+*.gml
+*.json
+
+# Logs and cache
+*.log
+*.sqlite
+.cache/
+.mypy_cache/
+.pytest_cache/
+__pypackages__/
+
+# Map & GIS tools
+.qgis2/
+.kepler.gl/
+*.qgz
+*.qgs
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# VS Code - optional
+.vscode/
+
+# Tests
+htmlcov/
+coverage.xml
+*.cover
+
+# Node (if using dashboard frontend later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
