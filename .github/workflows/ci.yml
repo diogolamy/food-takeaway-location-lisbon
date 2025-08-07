@@ -31,7 +31,7 @@ jobs:
         run: poetry install
 
       - name: Run pylint
-        run: poetry run pylint food_takeaway_location_lisbon tests
+        run: poetry run pylint food_takeaway_location_lisbon
 
       - name: Run pytest
         run: poetry run pytest
