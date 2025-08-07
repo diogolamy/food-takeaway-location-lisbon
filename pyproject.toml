@@ -23,6 +23,7 @@ packages = [{ include = "food_takeaway_location_lisbon" }]
 seaborn = "^0.13.2"
 pytest = "^8.4.1"
 black = "^25.1.0"
+pylint = "^3.3.7"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
