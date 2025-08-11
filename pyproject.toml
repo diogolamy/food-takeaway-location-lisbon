@@ -38,6 +38,7 @@ pylint = "^3.3.7"
 jupyter = "^1.0.0"
 pre-commit = "^3.7.0"
 toml = "^0.10.2"
+pytest-cov = "^6.2.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
