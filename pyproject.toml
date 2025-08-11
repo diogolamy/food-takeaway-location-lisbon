@@ -1,13 +1,14 @@
 [project]
 name = "food-takeaway-location-lisbon"
 version = "0.1.0"
-description = "This project aims to identify the most strategic location in Lisbon to open a new **takeaway food shop**, using socio-economic, demographic and geographic data. The goal is to combine **data science techniques** and **local knowledge** to support a real-world business decision."
+description = "Identify the most strategic location in Lisbon to open a new takeaway food shop, combining socio-economic, demographic, and geographic data with data science techniques."
 authors = [
-    {name = "diogolamy",email = "diogolamy1999@gmail.com"}
+    { name = "diogolamy", email = "diogolamy1999@gmail.com" }
 ]
-license = {text = "MIT"}
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.12"
+
 dependencies = [
     "pandas (>=2.3.1,<3.0.0)",
     "numpy (>=2.3.2,<3.0.0)",
@@ -18,12 +19,24 @@ dependencies = [
 
 [tool.poetry]
 packages = [{ include = "food_takeaway_location_lisbon" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: GIS"
+]
+
+[tool.poetry.urls]
+"Source" = "https://github.com/diogolamy/food-takeaway-location-lisbon"
 
 [tool.poetry.group.dev.dependencies]
 seaborn = "^0.13.2"
 pytest = "^8.4.1"
 black = "^25.1.0"
 pylint = "^3.3.7"
+jupyter = "^1.0.0"
+pre-commit = "^3.7.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
